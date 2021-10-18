@@ -1,6 +1,6 @@
 const { gerarNumeroAleatorio, acharCaracter } = require('../lib/utils');
 
-describe('Utils', () => {
+describe('Testes', () => {
     describe('gerarNumeroAleatorio', () => {
         test('fim nao pode ser negativo', () => {
             expect(gerarNumeroAleatorio(20, -5))
@@ -13,5 +13,5 @@ describe('Utils', () => {
             expect(acharCaracter(-4, 'abcde', 'c'))
                 .toBe('comprimento invalido');
         });
-    });    
+    });
 });
